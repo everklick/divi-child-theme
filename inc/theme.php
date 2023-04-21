@@ -98,7 +98,7 @@ add_action( 'wp_head', function () {
  * @return string
  */
 function get_font_face_styles() : string {
-	if ( ! is_dir( get_stylesheet_directory_uri() . '/font/' ) ) {
+	if ( ! is_dir( get_stylesheet_directory() . '/font/' ) ) {
 		return '';
 	}
 
